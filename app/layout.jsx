@@ -1,8 +1,15 @@
-const MainLayout = () => {
+import { children } from "react";
+// import "@tailwindcss/postcss";
+export const metadata = {
+  title: "Property Pulse",
+  keywords: "rental,property,real estate",
+  description: "Find the perfect rental property",
+};
+const MainLayout = ({ children }) => {
   return (
     <html>
       <body>
-        <main>Main layout</main>
+        <main>{children}</main>
       </body>
     </html>
   );
